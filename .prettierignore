@@ -1,0 +1,15 @@
+# Ignore artifacts:
+.next
+build
+dist
+node_modules
+.cache
+
+# Ignore dotfiles
+.env
+.env.*
+.git
+.DS_Store
+
+# Local development
+.vercel
