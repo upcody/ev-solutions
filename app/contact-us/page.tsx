@@ -106,25 +106,35 @@ const page = () => {
                             </div>
                         </div>
                         <div className="col-span-6 mt-10 rounded-2xl border-2 border-purple-300/60 bg-white p-5 shadow-[0_0_80px_rgba(119,128,161,0.1)] dark:border-purple-900 dark:bg-purple-900 dark:shadow-none md:p-8 lg:mt-0">
-                            <form>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY} />
+                                <input type="hidden" name="redirect" value={process.env.NEXT_PUBLIC_APP_URL}></input>
+
                                 <div className="mb-7 grid gap-7 md:grid-cols-2 md:gap-y-9">
                                     <div>
-                                        <input type="text" placeholder="First Name" className="form-input" />
+                                        <input type="text" name="First Name" id="First Name" required placeholder="First Name" className="form-input" />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Last Name" className="form-input" />
+                                        <input type="text" name="Last Name" id="Last Name" placeholder="Last Name" className="form-input" />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Email ID" className="form-input" />
+                                        <input type="text" name="Email" id="Email" required placeholder="Email" className="form-input" />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Subject" className="form-input" />
+                                        <input type="text" name="Subject" id="Subject" placeholder="Subject" className="form-input" />
                                     </div>
                                     <div className="md:col-span-2">
-                                        <textarea rows={4} placeholder="Type your messages" className="form-textarea"></textarea>
+                                        <textarea
+                                            rows={4}
+                                            name="Messages"
+                                            id="Messages"
+                                            required
+                                            placeholder="Type your messages"
+                                            className="form-textarea"
+                                        ></textarea>
                                     </div>
                                 </div>
-                                <button type="button" className="btn w-full text-base font-bold uppercase md:max-w-[285px]">
+                                <button type="submit" className="btn w-full text-base font-bold uppercase md:max-w-[285px]">
                                     send message
                                 </button>
                             </form>
