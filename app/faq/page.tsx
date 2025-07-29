@@ -4,7 +4,6 @@ import NewsLetter from '@/components/NewsLetter';
 import helper from '@/libs/helper';
 import { Metadata } from 'next';
 import Script from 'next/script';
-import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Faq | NOBBLE',
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Faq | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: env.NEXT_PUBLIC_APP_URL + '/faq',
+        url: process.env.NEXT_PUBLIC_APP_URL + '/faq',
         type: 'website',
     },
     twitter: {
@@ -22,8 +21,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${env.NEXT_PUBLIC_APP_URL}/faq`,
-        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/faq` },
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/faq`,
+        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/faq` },
     },
 };
 

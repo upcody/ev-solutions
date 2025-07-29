@@ -2,7 +2,6 @@ import NewsLetter from '@/components/NewsLetter';
 import Link from 'next/link';
 import helper from '@/libs/helper';
 import type { Metadata } from 'next';
-import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy | NOBBLE',
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Privacy Policy | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: env.NEXT_PUBLIC_APP_URL + '/privacy-policy',
+        url: process.env.NEXT_PUBLIC_APP_URL + '/privacy-policy',
         type: 'website',
     },
     twitter: {
@@ -20,8 +19,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${env.NEXT_PUBLIC_APP_URL}/privacy-policy`,
-        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/privacy-policy` },
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/privacy-policy`,
+        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/privacy-policy` },
     },
 };
 

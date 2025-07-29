@@ -1,7 +1,6 @@
 import NewsLetter from '@/components/NewsLetter';
 import helper from '@/libs/helper';
 import type { Metadata } from 'next';
-import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Terms & Conditions | NOBBLE',
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Terms & Conditions | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: env.NEXT_PUBLIC_APP_URL + '/terms-condition',
+        url: process.env.NEXT_PUBLIC_APP_URL + '/terms-condition',
         type: 'article',
     },
     twitter: {
@@ -19,8 +18,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${env.NEXT_PUBLIC_APP_URL}/terms-condition`,
-        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/terms-condition` },
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terms-condition`,
+        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/terms-condition` },
     },
 };
 
