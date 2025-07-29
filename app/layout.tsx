@@ -10,7 +10,6 @@ import Image from 'next/image';
 import App from '@/App';
 import { Metadata } from 'next';
 import helper from '@/libs/helper';
-import { env } from '../env';
 
 import { Plus_Jakarta_Sans } from 'next/font/google';
 
@@ -21,7 +20,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(env.NEXT_PUBLIC_APP_URL || ''),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ''),
     title: 'NOBBLE',
     description: 'Tailwind CSS Multipurpose Landing Templates',
     icons: {
@@ -32,8 +31,8 @@ export const metadata: Metadata = {
         type: 'website',
     },
     robots: {
-        index: env.NEXT_PUBLIC_IS_PRODUCTION == true,
-        follow: env.NEXT_PUBLIC_IS_PRODUCTION == true,
+        index: process.env.NEXT_PUBLIC_IS_PRODUCTION == 'true',
+        follow: process.env.NEXT_PUBLIC_IS_PRODUCTION == 'true',
     },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -47,11 +46,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             '@context': 'https://schema.org',
                             '@type': 'Organization',
                             name: 'NOBBLE',
-                            url: env.NEXT_PUBLIC_APP_URL || '',
-                            id: `${env.NEXT_PUBLIC_APP_URL}#organization`,
-                            logo: `${env.NEXT_PUBLIC_APP_URL}/assets/images/logo.png`,
+                            url: process.env.NEXT_PUBLIC_APP_URL || '',
+                            id: `${process.env.NEXT_PUBLIC_APP_URL}#organization`,
+                            logo: `${process.env.NEXT_PUBLIC_APP_URL}/assets/images/logo.png`,
                             legalName: 'NOBBLE',
-                            sameAs: [env.NEXT_PUBLIC_APP_URL || ''],
+                            sameAs: [process.env.NEXT_PUBLIC_APP_URL || ''],
                         }),
                     }}
                 />
@@ -62,8 +61,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             '@context': 'https://schema.org',
                             '@type': 'WebSite',
                             name: 'NOBBLE',
-                            url: env.NEXT_PUBLIC_APP_URL || '',
-                            id: `${env.NEXT_PUBLIC_APP_URL}#website`,
+                            url: process.env.NEXT_PUBLIC_APP_URL || '',
+                            id: `${process.env.NEXT_PUBLIC_APP_URL}#website`,
                         }),
                     }}
                 />

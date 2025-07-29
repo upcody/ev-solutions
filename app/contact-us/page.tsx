@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Script from 'next/script';
 import helper from '@/libs/helper';
 import type { Metadata } from 'next';
-import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Contact Us | NOBBLE',
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Contact Us | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: env.NEXT_PUBLIC_APP_URL + '/contact-us',
+        url: process.env.NEXT_PUBLIC_APP_URL + '/contact-us',
         type: 'website',
     },
     twitter: {
@@ -24,8 +23,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${env.NEXT_PUBLIC_APP_URL}/contact-us`,
-        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/contact-us` },
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/contact-us`,
+        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/contact-us` },
     },
 };
 
@@ -108,8 +107,8 @@ const page = () => {
                         </div>
                         <div className="col-span-6 mt-10 rounded-2xl border-2 border-purple-300/60 bg-white p-5 shadow-[0_0_80px_rgba(119,128,161,0.1)] dark:border-purple-900 dark:bg-purple-900 dark:shadow-none md:p-8 lg:mt-0">
                             <form action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value={env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY} />
-                                <input type="hidden" name="redirect" value={env.NEXT_PUBLIC_APP_URL}></input>
+                                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY} />
+                                <input type="hidden" name="redirect" value={process.env.NEXT_PUBLIC_APP_URL}></input>
 
                                 <div className="mb-7 grid gap-7 md:grid-cols-2 md:gap-y-9">
                                     <div>
