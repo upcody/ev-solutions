@@ -11,6 +11,7 @@ import CountsUp from '@/components/CountsUp';
 import { Metadata } from 'next';
 import helper from '@/libs/helper';
 import Script from 'next/script';
+import { env } from '../env';
 
 export const metadata: Metadata = {
     title: 'Home | NOBBLE',
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Home | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: process.env.NEXT_PUBLIC_APP_URL,
+        url: env.NEXT_PUBLIC_APP_URL,
         type: 'website',
     },
     twitter: {
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_APP_URL}`,
-        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}` },
+        canonical: `${env.NEXT_PUBLIC_APP_URL}`,
+        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}` },
     },
 };
 

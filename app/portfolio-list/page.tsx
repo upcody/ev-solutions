@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import helper from '@/libs/helper';
 import type { Metadata } from 'next';
+import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Portfolio List | NOBBLE',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Portfolio List | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: process.env.NEXT_PUBLIC_APP_URL + '/portfolio-list',
+        url: env.NEXT_PUBLIC_APP_URL + '/portfolio-list',
         type: 'website',
     },
     twitter: {
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/portfolio-list`,
-        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/portfolio-list` },
+        canonical: `${env.NEXT_PUBLIC_APP_URL}/portfolio-list`,
+        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/portfolio-list` },
     },
 };
 

@@ -6,6 +6,7 @@ import AchievementSlider from '@/components/AchievementSlider';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import helper from '@/libs/helper';
+import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'About Us | NOBBLE',
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'About Us | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: process.env.NEXT_PUBLIC_APP_URL + '/about-us',
+        url: env.NEXT_PUBLIC_APP_URL + '/about-us',
         type: 'website',
     },
     twitter: {
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/about-us`,
-        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/about-us` },
+        canonical: `${env.NEXT_PUBLIC_APP_URL}/about-us`,
+        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/about-us` },
     },
 };
 

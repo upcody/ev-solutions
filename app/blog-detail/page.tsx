@@ -9,6 +9,7 @@ import NewsLetter from '@/components/NewsLetter';
 import Image from 'next/image';
 import helper from '@/libs/helper';
 import type { Metadata } from 'next';
+import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: 'Blog Detail | NOBBLE',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: 'Blog Detail | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: process.env.NEXT_PUBLIC_APP_URL + '/blog-detail',
+        url: env.NEXT_PUBLIC_APP_URL + '/blog-detail',
         type: 'article',
     },
     twitter: {
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
         description: 'Tailwind CSS Multipurpose Landing Templates',
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/blog-detail`,
-        languages: { 'x-default': `${process.env.NEXT_PUBLIC_APP_URL}/blog-detail` },
+        canonical: `${env.NEXT_PUBLIC_APP_URL}/blog-detail`,
+        languages: { 'x-default': `${env.NEXT_PUBLIC_APP_URL}/blog-detail` },
     },
 };
 

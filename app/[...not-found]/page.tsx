@@ -2,6 +2,7 @@ import helper from '@/libs/helper';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { env } from '../../env';
 
 export const metadata: Metadata = {
     title: '404 | NOBBLE',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
         ...helper.openGraphData,
         title: '404 | NOBBLE',
         description: 'Tailwind CSS Multipurpose Landing Templates',
-        url: process.env.NEXT_PUBLIC_APP_URL + '/not-found',
+        url: env.NEXT_PUBLIC_APP_URL + '/not-found',
         type: 'website',
     },
     twitter: {
