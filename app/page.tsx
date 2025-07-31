@@ -72,7 +72,7 @@ export default function Home() {
                                 type="button"
                                 className="absolute -top-20 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-[#806BFF26] px-4 py-3 font-semibold text-primary duration-300 hover:bg-primary hover:text-white md:-top-24 md:left-[9%] md:translate-x-0 lg:left-[15%]"
                             >
-                                <span>Nobble marketing</span>
+                                <span>evsolutions marketing</span>
                             </button>
                             <Image
                                 src="/assets/images/hero-banner-longarrow.svg"
