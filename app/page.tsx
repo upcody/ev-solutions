@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Tailwind CSS Multipurpose Landing Templates',
     openGraph: {
         ...helper.openGraphData,
-        title: 'Home | NOBBLE',
+        title: 'Home | evSolutions',
         description: 'Tailwind CSS Multipurpose Landing Templates',
         url: process.env.NEXT_PUBLIC_APP_URL,
         type: 'website',
