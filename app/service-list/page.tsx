@@ -149,7 +149,7 @@ const page = () => {
 
             <SEOServiceList />
 
-            <div className="py-16 lg:py-36">
+            <div id="pricing-section" className="py-16 lg:py-36">
                 <PricingChartOfPlan />
             </div>
 
