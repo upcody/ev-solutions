@@ -1,14 +1,14 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import FacebookIcon from '../Icons/FacebookIcon';
-import TwitterIcon from '../Icons/TwitterIcon';
 import InstagramIcon from '../Icons/InstagramIcon';
 import LinkedinIcon from '../Icons/LinkedinIcon';
 import { usePathname } from 'next/navigation';
 
 const Footer = () => {
     const pathName = usePathname();
+    const isOnPricingPage = pathName === '/' || pathName === '/service-list';
+    const pricingLinkHref = isOnPricingPage ? '#pricing-section' : '/#pricing-section';
 
     return (
         <footer className="mt-auto" id="footer">
@@ -19,21 +19,9 @@ const Footer = () => {
                             <Image src="/assets/images/logo-light.svg" alt="Logo" className="inline-flex dark:hidden" height={55} width={133} />
                             <Image src="/assets/images/logo-dark.svg" alt="Logo" className="hidden dark:inline-flex" height={55} width={133} />
                         </Link>
-                        <div className="md:ps-8">6000 Columbus Ave, Plano, Texas, USA 75024</div>
+                        <div className="md:ps-8">EV Solutions LTD, 167-169 Great Portland Street, London, W1W 5PF, United Kingdom</div>
                     </div>
                     <ul className="inline-flex items-center gap-8 text-purple-400">
-                        <li>
-                            <a href="#" className="inline-flex duration-300 hover:scale-125 hover:text-primary">
-                                <FacebookIcon />
-                                <span className="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="inline-flex duration-300 hover:scale-125 hover:text-primary">
-                                <TwitterIcon />
-                                <span className="sr-only">Twitter</span>
-                            </a>
-                        </li>
                         <li>
                             <a href="#" className="inline-flex duration-300 hover:scale-125 hover:text-primary">
                                 <InstagramIcon />
@@ -174,11 +162,6 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <a href="#" className="relative start-0 duration-300 hover:start-2 hover:text-primary">
-                                        License
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="relative start-0 duration-300 hover:start-2 hover:text-primary">
                                         Refund policy
                                     </a>
                                 </li>
@@ -188,13 +171,8 @@ const Footer = () => {
                             <h3 className="pb-8 font-bold text-purple-700 dark:text-white">Plans</h3>
                             <ul className="space-y-5 font-medium">
                                 <li>
-                                    <a href="#" className="relative start-0 duration-300 hover:start-2 hover:text-primary">
+                                    <a href={pricingLinkHref} className="relative start-0 duration-300 hover:start-2 hover:text-primary">
                                         Pricing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="relative start-0 duration-300 hover:start-2 hover:text-primary">
-                                        Premium support
                                     </a>
                                 </li>
                             </ul>

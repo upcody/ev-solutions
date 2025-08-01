@@ -49,7 +49,12 @@ export default function Home() {
                     />
                     <div className="absolute -left-96 top-36 hidden lg:block">
                         <span className="absolute right-0 top-0 z-1 inline-flex rounded-full bg-secondary p-2 dark:bg-purple-700">
-                            <Image src="/assets/images/hero-banner-space-circle.svg" alt="Space circle" width={118} height={118} />
+                            <Image
+                                src="/assets/images/hero-banner-space-circle.svg"
+                                alt="Space circle"
+                                width={118}
+                                height={118}
+                            />
                         </span>
                         <Image
                             src="/assets/images/hero-banner-space-img-2.svg"
@@ -100,7 +105,8 @@ export default function Home() {
                             </div>
                         </div>
                         <p className="relative mb-10 dark:text-purple-300 md:text-22">
-                            “You&apos;ve got a business, we have got brilliant minds. We impact your brand for you, hassle free.”
+                            “You&apos;ve got a business, we have got brilliant minds. We impact your brand for you,
+                            hassle free.”
                         </p>
                         <Link href="/contact-us" target="_blank" className="btn inline-flex">
                             Talk to sale
@@ -166,9 +172,12 @@ export default function Home() {
                 />
                 <div className="mx-auto max-w-[1142px] px-4">
                     <div className="mx-auto pb-10 text-center lg:w-2/3 lg:pb-16">
-                        <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">High impact services to improve your business</h2>
+                        <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">
+                            High impact services to improve your business
+                        </h2>
                         <p className="text-lg md:text-xl">
-                            Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
+                            Our team has a successful track record of helping brands scale profitably based on
+                            high-performing strategies.
                         </p>
                     </div>
                     <div className="relative grid items-start gap-4 text-center leading-6 sm:grid-cols-2 md:gap-x-[30px] md:gap-y-12 lg:grid-cols-3">
@@ -179,7 +188,11 @@ export default function Home() {
                             width={194}
                             height={194}
                         />
-                        <span className="absolute -bottom-10 -left-1/2 md:-left-1/3 md:bottom-0" data-aos="fade-right" data-aos-duration="1000">
+                        <span
+                            className="absolute -bottom-10 -left-1/2 md:-left-1/3 md:bottom-0"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <svg width="497" height="166" viewBox="0 0 497 166" fill="none">
                                 <path
                                     opacity="0.2"
@@ -223,18 +236,18 @@ export default function Home() {
                         />
                         <ServiceCard
                             className="shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-lg md:-mt-10 lg:mt-20"
-                            serviceImageSrc="/assets/images/email-sms-marketing.svg"
-                            serviceTitle="Email & SMS Marketing"
-                            serviceDescription="Leads are nurtured through our email, SMS, and automation services, resulting in customer"
-                            lineBgColor="bg-red"
-                            color="red"
-                            bgColor="bg-red/20"
+                            serviceImageSrc="/assets/images/global.svg"
+                            serviceTitle="Website Development"
+                            serviceDescription="One-page, multi-page modern websites for your needs in the shortest possible time"
+                            lineBgColor="bg-blue"
+                            color="blue"
+                            bgColor="bg-blue/20"
                         />
                         <ServiceCard
                             className="shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-lg md:mt-0 lg:-mt-20"
-                            serviceImageSrc="/assets/images/funnel-optimization.svg"
-                            serviceTitle="Funnel Optimization"
-                            serviceDescription="Real-time analytics is the discipline that applies logic and mathematics to data...."
+                            serviceImageSrc="/assets/images/credit-card.svg"
+                            serviceTitle="E-Commerce Development"
+                            serviceDescription="Development of online stores of any complexity tailored to your needs."
                             lineBgColor="bg-pink"
                             color="pink"
                             bgColor="bg-pink/20"
@@ -248,7 +261,11 @@ export default function Home() {
                             color="yellow"
                             bgColor="bg-yellow/20"
                         />
-                        <div className="relative rounded-lg bg-secondary px-4 py-10 dark:bg-primary md:px-7" data-aos="fade-up" data-aos-duration="1000">
+                        <div
+                            className="relative rounded-lg bg-secondary px-4 py-10 dark:bg-primary md:px-7"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-white/10">
                                 <Image src="/assets/images/all-services.svg" alt="image" width={56} height={56} />
                             </div>
@@ -270,10 +287,19 @@ export default function Home() {
             <div className="overflow-x-hidden">
                 <div className="mx-auto max-w-[1142px] px-4">
                     <div className="relative mx-auto pb-10 text-center lg:w-2/3 lg:pb-14">
-                        <Image src="/assets/images/pink-star.svg" alt="Pink star" className="absolute -right-24 top-10" width={32} height={32} />
-                        <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">Make your marketing more effective</h2>
+                        <Image
+                            src="/assets/images/pink-star.svg"
+                            alt="Pink star"
+                            className="absolute -right-24 top-10"
+                            width={32}
+                            height={32}
+                        />
+                        <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">
+                            Make your marketing more effective
+                        </h2>
                         <p className="text-lg md:text-xl">
-                            E-commerce brands can acquire and retain new customers using solutions that span the entire customer journey.
+                            E-commerce brands can acquire and retain new customers using solutions that span the entire
+                            customer journey.
                         </p>
                     </div>
                     <div className="relative flex grid-cols-3 flex-col gap-[30px] lg:grid">
@@ -348,12 +374,6 @@ export default function Home() {
                             <div>
                                 <h3 className="mb-6 text-22 font-semibold">Marketing Automation</h3>
                                 <p>Our team has a successful track record of helping brands.</p>
-                                <a href="#" className="group mt-10 inline-flex items-center gap-2.5 font-semibold">
-                                    <span>Learn more</span>
-                                    <span className="relative start-0 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-linear-to-r from-transparent from-50% to-white/40 to-50% duration-300 group-hover:start-1 rtl:rotate-180">
-                                        <RightArrowIcon />
-                                    </span>
-                                </a>
                             </div>
                             <div className="overflow-hidden rounded-t-lg lg:h-48">
                                 <Image
@@ -369,30 +389,28 @@ export default function Home() {
                             <div>
                                 <h3 className="mb-6 text-22 font-semibold">Content Marketing</h3>
                                 <p>
-                                    Our team has a successful track record of helping brands scale profitably based on high-performing strategies. E-commerce
-                                    brands can acquire and retain new customers using solutions that span the entire customer journey.
+                                    Our team has a successful track record of helping brands scale profitably based on
+                                    high-performing strategies. E-commerce brands can acquire and retain new customers
+                                    using solutions that span the entire customer journey.
                                 </p>
-                                <a href="#" className="group mt-10 inline-flex items-center gap-2.5 font-semibold">
-                                    <span>Learn more</span>
-                                    <span className="relative start-0 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-linear-to-r from-transparent from-50% to-white/40 to-50% duration-300 group-hover:start-1 rtl:rotate-180">
-                                        <RightArrowIcon />
-                                    </span>
-                                </a>
                             </div>
                             <div className="overflow-hidden rounded-t-lg lg:h-40">
-                                <Image src="/assets/images/content-marketing.jpg" alt="image" className="h-full w-full object-cover" width={674} height={160} />
+                                <Image
+                                    src="/assets/images/content-marketing.jpg"
+                                    alt="image"
+                                    className="h-full w-full object-cover"
+                                    width={674}
+                                    height={160}
+                                />
                             </div>
                         </div>
                         <div className="relative col-span-3 inline-flex flex-col justify-between gap-10 rounded-lg bg-yellow px-4 pt-10 leading-6 text-secondary sm:px-7 lg:flex-row lg:gap-7">
                             <div>
                                 <h3 className="mb-6 text-22 font-semibold">Social Media Marketing</h3>
-                                <p>Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.</p>
-                                <a href="#" className="group mt-10 inline-flex items-center gap-2.5 font-semibold">
-                                    <span>Learn more</span>
-                                    <span className="relative start-0 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-linear-to-r from-transparent from-50% to-secondary/40 to-50% duration-300 group-hover:start-1 rtl:rotate-180">
-                                        <RightArrowIcon />
-                                    </span>
-                                </a>
+                                <p>
+                                    We specialize in specific promotion and lead generation methods: Meta Ads (Facebook
+                                    & Instagram), Google Ads.
+                                </p>
                             </div>
                             <div className="w-full overflow-hidden rounded-t-lg lg:h-56 lg:max-w-lg">
                                 <Image
@@ -412,7 +430,9 @@ export default function Home() {
                 <div className="mx-auto flex max-w-[1142px] flex-col items-center gap-5 px-4 md:flex-row">
                     <div className="shrink-0 md:w-3/5">
                         <div className="pb-10 text-center md:ltr:text-left md:rtl:text-right lg:w-2/3 lg:pb-14">
-                            <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">Our process</h2>
+                            <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">
+                                Our process
+                            </h2>
                             <p className="text-lg md:text-xl">A simple, yet powerful and efficient process</p>
                         </div>
                         <div className="space-y-6 leading-6 md:space-y-10">
@@ -420,7 +440,10 @@ export default function Home() {
                                 <h3 className="pb-4 text-22 font-semibold text-purple-700 duration-300 group-hover:text-primary dark:text-white">
                                     1. Marketing Plan
                                 </h3>
-                                <p>Strategies include SEO optimization, social media campaigns, and email marketing. Tactics include content creation.</p>
+                                <p>
+                                    Strategies include SEO optimization, social media campaigns, and email marketing.
+                                    Tactics include content creation.
+                                </p>
                             </div>
                             <div className="group rounded-lg bg-linear-to-b to-transparent p-4 hover:from-primary/[0.16]">
                                 <h3 className="pb-4 text-22 font-semibold text-purple-700 duration-300 group-hover:text-primary dark:text-white">
@@ -428,8 +451,8 @@ export default function Home() {
                                 </h3>
 
                                 <p>
-                                    execution involves implementing and managing marketing strategies and tactics, such as advertising campaigns, content
-                                    creation.
+                                    execution involves implementing and managing marketing strategies and tactics, such
+                                    as advertising campaigns, content creation.
                                 </p>
                             </div>
                             <div className="group rounded-lg bg-linear-to-b to-transparent p-4 hover:from-primary/[0.16]">
@@ -437,14 +460,20 @@ export default function Home() {
                                     3. Growth & Scale
                                 </h3>
                                 <p>
-                                    This involves leveraging various digital marketing strategies, such as SEO, PPC advertising, content marketing, and email
-                                    marketing.
+                                    This involves leveraging various digital marketing strategies, such as SEO, PPC
+                                    advertising, content marketing, and email marketing.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="md:-me-[19%] xl:ms-14" data-aos="fade-left" data-aos-duration="1000">
-                        <Image src="/assets/images/our-process.png" alt="Process image" className="h-full w-full object-cover" width={579} height={551} />
+                        <Image
+                            src="/assets/images/our-process.png"
+                            alt="Process image"
+                            className="h-full w-full object-cover"
+                            width={579}
+                            height={551}
+                        />
                     </div>
                 </div>
             </div>
@@ -459,7 +488,11 @@ export default function Home() {
                         height={99}
                     />
                     <div className="relative mx-auto shrink-0 sm:w-1/2 lg:mx-0">
-                        <span className="absolute end-1/3 top-1/4 hidden lg:block" data-aos="fade-right" data-aos-duration="2000">
+                        <span
+                            className="absolute end-1/3 top-1/4 hidden lg:block"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
                             <svg width="811" height="441" viewBox="0 0 811 441" fill="none">
                                 <path
                                     opacity="0.2"
@@ -501,7 +534,11 @@ export default function Home() {
                                 </defs>
                             </svg>
                         </span>
-                        <div className="relative w-1/2 overflow-hidden rounded-lg" data-aos="fade-right" data-aos-duration="1000">
+                        <div
+                            className="relative w-1/2 overflow-hidden rounded-lg"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <Image
                                 src="/assets/images/advance-tracking.jpg"
                                 alt="Advance tracking"
@@ -510,7 +547,11 @@ export default function Home() {
                                 height={259}
                             />
                         </div>
-                        <div className="relative ms-auto w-1/2 overflow-hidden rounded-lg lg:-mt-10 lg:me-10" data-aos="fade-right" data-aos-duration="1000">
+                        <div
+                            className="relative ms-auto w-1/2 overflow-hidden rounded-lg lg:-mt-10 lg:me-10"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
                             <Image
                                 src="/assets/images/depth-monitoring.jpg"
                                 alt="Depth monitoring"
@@ -522,25 +563,44 @@ export default function Home() {
                     </div>
                     <div className="relative mt-8">
                         <div className="pb-10 text-center lg:pb-14 lg:ltr:text-left lg:rtl:text-right">
-                            <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">Why choose us</h2>
+                            <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">
+                                Why choose us
+                            </h2>
                             <p className="text-lg md:text-xl">We help great brands scale with content marketing.</p>
                         </div>
                         <div className="space-y-12 pb-10 lg:pb-16">
                             <div className="flex gap-4 leading-6 md:gap-8">
                                 <span className="shrink-0">
-                                    <Image src="/assets/images/advance-tracking-icon.svg" alt="Advance tracking icon" width={48} height={49} />
+                                    <Image
+                                        src="/assets/images/advance-tracking-icon.svg"
+                                        alt="Advance tracking icon"
+                                        width={48}
+                                        height={49}
+                                    />
                                 </span>
                                 <div>
-                                    <h3 className="pb-4 text-xl font-semibold text-purple-700 dark:text-white md:text-22">Advanced tracking</h3>
-                                    <p>Use our analytics, reporting, and AI-assisted optimization tools to monitor trends, track.</p>
+                                    <h3 className="pb-4 text-xl font-semibold text-purple-700 dark:text-white md:text-22">
+                                        Advanced tracking
+                                    </h3>
+                                    <p>
+                                        Use our analytics, reporting, and AI-assisted optimization tools to monitor
+                                        trends, track.
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex gap-4 leading-6 md:gap-8">
                                 <span className="shrink-0">
-                                    <Image src="/assets/images/depth-monitoring-icon.svg" alt="Depth monitoring icon" width={48} height={49} />
+                                    <Image
+                                        src="/assets/images/depth-monitoring-icon.svg"
+                                        alt="Depth monitoring icon"
+                                        width={48}
+                                        height={49}
+                                    />
                                 </span>
                                 <div>
-                                    <h3 className="pb-4 text-xl font-semibold text-purple-700 dark:text-white md:text-22">In - depth monitoring</h3>
+                                    <h3 className="pb-4 text-xl font-semibold text-purple-700 dark:text-white md:text-22">
+                                        In - depth monitoring
+                                    </h3>
                                     <p>Time Tracking is never been easier. Just let the stopwatch run.</p>
                                 </div>
                             </div>
@@ -554,7 +614,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="pb-16 lg:pb-36">
+            <div id="pricing-section" className="pb-16 lg:pb-36">
                 <PricingChartOfPlan />
             </div>
 
@@ -569,8 +629,11 @@ export default function Home() {
                     />
                     <div className="mb-4 inline-block w-full text-center lg:mb-0 lg:pe-12 lg:ltr:text-left lg:rtl:text-right">
                         <h2 className="mb-5 text-[26px]/7 font-bold text-purple-700 dark:text-white">FAQ ?</h2>
-                        <p className="text-xl">Have any quotations? we are help you.</p>
-                        <Link href="/faq" className="group mt-8 inline-flex items-center gap-2.5 font-semibold text-primary lg:mt-10">
+                        <p className="text-xl">Frequently Asked Questions</p>
+                        <Link
+                            href="/faq"
+                            className="group mt-8 inline-flex items-center gap-2.5 font-semibold text-primary lg:mt-10"
+                        >
                             <span>Learn more</span>
                             <span className="relative start-0 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-linear-to-r from-transparent from-50% to-primary/40 to-50% duration-300 group-hover:start-1 rtl:rotate-180">
                                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none">

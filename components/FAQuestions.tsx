@@ -10,33 +10,33 @@ const FAQuestions = () => {
     const queries = [
         {
             id: 1,
-            question: 'Do you offer a free trial?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            question: 'What services do you provide to improve my e-commerce business?',
+            answer: 'We offer a range of high-impact services, including website and funnel optimization, paid media campaigns (Meta Ads, Google Ads), content marketing, social media marketing, and advanced analytics to scale your brand profitably and enhance customer acquisition and retention.',
         },
         {
             id: 2,
-            question: 'How do i create an account?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            question: 'How do you ensure my website performs effectively?',
+            answer: 'We monitor your website to ensure it runs smoothly, implementing optimization strategies like SEO, user-friendly design, and real-time analytics to improve performance and conversion rates. Our team uses advanced tracking tools to identify and address any issues promptly.',
         },
         {
             id: 3,
-            question: 'What protections does your system use to protect our data?',
-            answer: 'Data protection strategies typically involve multi-step processes that define how security measures are implemented and maintained.',
+            question: 'What makes your digital marketing strategies effective?',
+            answer: 'Our strategies are data-driven and tailored to your business needs. We combine SEO, paid media (Meta Ads and Google Ads), content creation, and marketing automation to maximize conversions, increase repeat traffic, and build online authority across the customer journey.',
         },
         {
             id: 4,
-            question: 'What type of support is included with this service?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            question: 'What are the benefits of your pricing plans?',
+            answer: 'Our flexible plans (Startup, Special, Elite) cater to businesses of all sizes. Each includes access to website monitoring, 24-hour support, customer management, upgrades, ads managements and monthly updates to support your growth at every stage.',
         },
         {
             id: 5,
-            question: 'Do you have premium plans for products?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            question: 'How quickly can I expect results from your services?',
+            answer: 'Results vary based on your goals and current setup, but our streamlined process—starting with a customized marketing plan, followed by execution and scaling—typically shows measurable improvements in traffic and conversions within 1-3 months.',
         },
         {
             id: 6,
-            question: 'Who else is using nobble tool?',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            question: 'Do you offer ongoing support and updates for my campaigns?',
+            answer: 'Yes, we provide in-depth monitoring, monthly updates, and responsive support via email to keep your campaigns optimized and aligned with your business objectives, ensuring long-term success.',
         },
     ];
     return (
@@ -65,9 +65,17 @@ const FAQuestions = () => {
                             </button>
                         </h3>
                         <AnimateHeight duration={600} height={active === i ? 'auto' : 0}>
-                            <div className="ac-panel" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                                <p className="ac-text p-0! pb-5! font-jakarta! text-base! text-purple-500!" itemProp="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <div
+                                className="ac-panel"
+                                itemScope
+                                itemProp="acceptedAnswer"
+                                itemType="https://schema.org/Answer"
+                            >
+                                <p
+                                    className="ac-text p-0! pb-5! font-jakarta! text-base! text-purple-500!"
+                                    itemProp="text"
+                                >
+                                    {faq.answer}
                                 </p>
                             </div>
                         </AnimateHeight>
